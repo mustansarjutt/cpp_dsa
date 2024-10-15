@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeeksforGeeks Table Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin: 20px auto;
+            width: fit-content;
+        }
+        h1 {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>GeeksforGeeks</h1>
+        <table border="1">
+            <tr>
+                <td rowspan="2">Table 1</td>
+                <td>
+                    <table border="1" style="border: 2px solid blue; margin: auto;">
+                        <tr>
+                            <td>Table 2</td>
+                            <td>Table 2</td>
+                        </tr>
+                        <tr>
+                            <td>Table 2</td>
+                            <td>Table 2</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>Table 1</td>
+            </tr>
+            <tr>
+                <td colspan="2">Table 1</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
